@@ -121,6 +121,7 @@ class _HomeState extends State<Home> {
                 }),
             duration: Duration(seconds: 4),
           );
+          Scaffold.of(context).removeCurrentSnackBar();
           Scaffold.of(context).showSnackBar(snackbar);
         });
       },
